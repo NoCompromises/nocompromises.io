@@ -1,12 +1,24 @@
 @extends('_layouts.master')
 
 @section('body')
-    <main>
-        <h1>No Compromises</h1>
-        <h2>Don't settle for the cheapest bid.</h2>
+<p>Work with an experienced technology partner that is reliable and cares about quality.</p>
+<p>Send us a note and let us know how we can help.</p>
 
-        <p>Work with an experienced technology partner that is reliable and cares about quality.</p>
-        <p>Send us a note and let us know how we can help.</p>
-
-    </main>
+<form name="contact" method="POST" netlify action="/thank-you">
+    <p>
+        <label>Your Company:<br/><input type="text" name="company" required size="50" /></label>
+    </p>
+    <p>
+        <label>Your Name:<br/><input type="text" name="name" required size="50" /></label>
+    </p>
+    <p>
+        <label>Your Email:<br/><input type="email" name="email" required size="50" /></label>
+    </p>
+    <p>
+        <label>Message:<br/><textarea name="message"  required rows="3" cols="50"></textarea></label>
+    </p>
+    <p>
+        <button type="submit">Send</button>
+    </p>
+</form>
 @endsection

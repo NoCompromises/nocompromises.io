@@ -26,6 +26,11 @@
     </head>
 
     <body>
-        @yield('body')
+        <main>
+            <h1>No Compromises</h1>
+            <h2>Don't settle for the cheapest bid.</h2>
+
+            @yield('body')
+        </main>
     </body>
 </html>
