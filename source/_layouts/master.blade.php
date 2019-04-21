@@ -9,6 +9,7 @@
         <meta property="og:site_name" content="nocompromises.io">
         <meta property="og:description" content="No Compromises is a web application development and coaching firm based in Milwaukee, WI.">
         <meta name="description" content="No Compromises is a web application development and coaching firm based in Milwaukee, WI.">
+        <meta name="google-site-verification" content="v1xotd4T3p-49ygf-MsQ4BAWaGpDoDfHDcvue6IO1iI" />
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
