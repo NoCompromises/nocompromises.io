@@ -7,8 +7,8 @@
         <title>No Compromises</title>
         <meta property="og:title" content="No Compromises">
         <meta property="og:site_name" content="nocompromises.io">
-        <meta property="og:description" content="No Compromises is a web application development and coaching firm based in Milwaukee, WI.">
-        <meta name="description" content="No Compromises is a web application development and coaching firm based in Milwaukee, WI.">
+        <meta property="og:description" content="Software projects can be risky. We can help.">
+        <meta name="description" content="Software projects can be risky. We can help.">
         <meta name="google-site-verification" content="v1xotd4T3p-49ygf-MsQ4BAWaGpDoDfHDcvue6IO1iI" />
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
