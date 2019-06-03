@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -11,15 +11,20 @@
         <meta name="description" content="No Compromises is a web application development and coaching firm based in Milwaukee, WI.">
         <meta name="google-site-verification" content="v1xotd4T3p-49ygf-MsQ4BAWaGpDoDfHDcvue6IO1iI" />
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
 
     <body>
-        <main>
-            <h1>No Compromises</h1>
-            <h2>Don't settle for the cheapest bid.</h2>
-
+        <main class="container">
             @yield('body')
         </main>
+
+        <footer class="text-center">
+            <p class="text-black-50"><i>When it comes to the success of your project, you should accept ...</i></p>
+            <h1 class="h4">No Compromises</h1>
+
+            <p class="phone"><a class="text-black-50" href="tel:+14148526221">414-852-6221</a></p>
+        </footer>
     </body>
 </html>
