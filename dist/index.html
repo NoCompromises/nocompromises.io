@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" defer></script>
+
   <style>
     section:not(:last-child) {
       margin-bottom: 2.5rem;
@@ -60,7 +63,9 @@
     <section>
       <h2>Close PHPStorm for a second</h2>
       <p>Invest 30 minutes to see if we can help. Book a free consultation to discuss your team's needs.</p>
-      <a href="#" class="btn btn-primary">Calendly Link Here</a>
+
+      <a href="" class="btn btn-primary"
+        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nocomp/30min'});return false;">Schedule a call</a>
     </section>
 
     <section>
@@ -119,7 +124,8 @@
     <section>
       <h2>Not every problem can be solved using Stack Overflow</h2>
       <p>Tap into our experience. Schedule a free 30-minute call and let us help.</p>
-      <a href="#" class="btn btn-primary">Calendly Link Here</a>
+      <a href="" class="btn btn-primary"
+        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nocomp/30min'});return false;">Schedule a call</a>
     </section>
   </main>
 
