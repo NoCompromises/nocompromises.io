@@ -1,171 +1,342 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta
+      name="google-site-verification"
+      content="v1xotd4T3p-49ygf-MsQ4BAWaGpDoDfHDcvue6IO1iI"
+    />
 
-  <meta name="google-site-verification" content="v1xotd4T3p-49ygf-MsQ4BAWaGpDoDfHDcvue6IO1iI" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" defer></script>
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
 
-  <style>
-    section:not(:last-child) {
-      margin-bottom: 2.5rem;
-    }
-  </style>
-  <title>No Compromises</title>
-</head>
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      defer
+    ></script>
 
-<body>
-  <main class="container py-5">
-    <h1 class="text-center">Hands-on help for Laravel SaaS teams</h1>
-    <h2 class="text-center">Expert partners who make your team and product better</h2>
-    <hr>
-    <section>
-      <h2>Building a successful product is hard</h2>
-      <ul>
-        <li>Do you feel like you're always behind?</li>
-        <li>Does your team spend more time fixing bugs than shipping new features?</li>
-        <li>Are you losing customers because your app is too slow?</li>
-        <li>Have you ever made excuses for your product during a demo?</li>
-        <li>Is your product stuck on an old version of Laravel because you’re too afraid to upgrade and break
-          something?</li>
-      </ul>
-    </section>
+    <style>
+      :root {
+        --primary-color: #0277c0;
+        --primary-color-bright: #3399cc;
+        --dark-color: #333333;
+        --light-color: #f6f6f6;
+        --sand-color: #b7aba0;
+        --line-color: #dee2e6;
+      }
+      body {
+        background-color: var(--light-color);
+        color: #000000;
+        font-family: "Lato", sans-serif;
+      }
+      .btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+      }
+      .btn-primary:hover {
+        background-color: var(--primary-color-bright);
+        border-color: var(--primary-color-bright);
+      }
+      dd:not(:last-child) {
+        border-bottom: 1px solid var(--line-color);
+        padding-bottom: 1.2rem;
+        margin-bottom: 1.2rem;
+      }
+      a {
+        color: var(--primary-color);
+      }
+      a:hover {
+        color: var(--primary-color-bright);
+      }
+      h2 {
+        color: var(--dark-color);
+        text-align: center;
+      }
+      h6 {
+        font-weight: bold;
+      }
+      header img {
+        width: 7rem;
+        height: 7rem;
+      }
+      header div {
+        border: 0.01rem solid var(--line-color);
+        border-top-color: var(--primary-color-bright);
+        position: relative;
+      }
+      header div:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        content: "";
+        display: block;
+        height: 0.7rem;
+        background: var(--primary-color-bright);
+      }
+      main section {
+        margin-bottom: 3rem;
+      }
+      main h2 {
+        margin-bottom: 1rem;
+      }
+      footer {
+        background: url("footer-background.png") var(--dark-color);
+        color: var(--light-color);
+      }
+    </style>
 
-    <section>
-      <h2>There is a better way</h2>
-      <ul>
-        <li>Your projects are done on time and you even pay down technical debt along the way.</li>
-        <li>Most of your time is spent building new things instead of fixing old bugs.</li>
-        <li>People enjoy using your product and you take pride in your well-performing app.</li>
-        <li>By staying current, your team gets to use the newest and best Laravel features.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Accept <strong>No Compromises</strong></h2>
-      <p>
-        Your problems are painful, but not unique. Many teams face these same challenges. Introducing a fresh
-        perspective can help your team break out of this rut. We've worked with many Laravel teams to solve these exact
-        pains. No Compromises isn't just another set of hands. When we join a team, we do more than just close tickets
-        and write code. We make your team and product better.
-      </p>
-    </section>
-
-    <section>
-      <h2>Close PHPStorm for a second</h2>
-      <p>Invest 30 minutes to see if we can help. Book a free consultation to discuss your team's needs.</p>
-
-      <a href="" class="btn btn-primary"
-        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nocomp/30min'});return false;">Schedule a call</a>
-    </section>
-
-    <section>
-      <h2>Common Questions</h2>
-      <dl>
-        <dt>You say you make our product and team better. What does <q>better</q> actually mean?</dt>
-        <dd>
-          <p>We make your product better, not just by building features and fixing bugs, but by continually improving
-            the code base: making code easier to understand, writing tests to build confidence, and creating useful
-            documentation.</p>
-          <p>We make your team better through open communication: investing time in constructive code
-            review, pair programming, and helping translate technical needs to business outcomes.</p>
-        </dd>
-
-        <dt>Why would I want some outsider like you?</dt>
-        <dd>It's already tough to get everything done. Bringing in outside help to introduce new best practices saves
-          time, especially since this is all we do. Plus, you can use our unbiased expertise to make a stronger case
-          with management that investing in quality now will pay dividends.</dd>
-
-        <dt>We're already behind, won't adding more people slow things down?</dt>
-        <dd>Since we've worked on many projects, we're very quick to get up to speed. Yes, we'll need your help with
-          some initial setup, but we aren't going to waste your time with a lot of silly
-          questions. We've also built tools over the years that make this whole process easier.
-        </dd>
-
-        <dt>I'm sold, but I don't make the final decision. Can you help convince my boss?</dt>
-        <dd>We totally understand! You set up the call and we can do the rest.</dd>
-      </dl>
-    </section>
-
-    <section>
-      <h2>What's with the name No Compromises?</h2>
-      <p>
-        Developers really want to build something they're proud of, but they often feel forced into making compromises.
-        Joel also felt that way for several years before deciding to take a stand. This meant striking out on his own
-        and starting No Compromises, with the guiding principle of only doing projects the right way. This doesn't mean
-        he's stubborn, it just means he cares about building quality software.
-      </p>
-
-      <p>Aaron had many years of corporate experience leading teams with a focus on best practices. While running
-        the local PHP user group together, they realized something. Joel's "no compromise" attitude with Aaron's best
-        practice mindset and attention to detail was a perfect match.</p>
-
-      <p>
-        We're proud to do the right thing. We want to bring that to your team.
-      </p>
-
-    </section>
-
-    <section>
-      <h2>Let's do this!</h2>
-      <p>It wasn't your fault things got this way, but now it's your responsibility. We can make this better together.
-        Don't put this off another quarter.</p>
-    </section>
-
-    <section>
-      <h2>Not every problem can be solved using Stack Overflow</h2>
-      <p>Tap into our experience. Schedule a free 30-minute call and let us help.</p>
-      <a href="" class="btn btn-primary"
-        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nocomp/30min'});return false;">Schedule a call</a>
-    </section>
-  </main>
-
-  <footer class="pb-5">
-    <div class="container">
-      <section class="row">
-        <div class="col-md mb-4 mb-md-0">
-          <h6>No Compromises</h6>
-          <p class="mb-0">
-            Joel Clermont / Aaron Saray
-          </p>
-          <p class="mb-0">
-            Milwaukee, Wisconsin
-          </p>
-          <p>
-            <a href="mailto:sales@nocompromises.io">sales@nocompromises.io</a>
-          </p>
-        </div>
-        <div class="col-md">
-          <h6>No Compromises Podcast</h6>
-          <p>
-            Curious what it's like to work with us? Check out one of our <a
-              href="https://show.nocompromises.io/episodes" rel="noopener">podcast episodes</a>.</p>
-          </p>
-          <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless
-            src="https://player.simplecast.com/0b10acc3-acbb-4ab6-9727-5853e422368d?dark=false"></iframe>
+    <title>No Compromises</title>
+  </head>
+  <body>
+    <header class="container p-4 text-center">
+      <img src="logo-circle.svg" alt="No Compromises Logo" class="mb-4" />
+      <section>
+        <div class="d-inline-block bg-white pb-3 pt-4 px-4 shadow">
+          <h1>Hands-on help for Laravel SaaS teams</h1>
+          <h2>Expert partners who make your team and product better</h2>
         </div>
       </section>
-    </div>
-  </footer>
+    </header>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
-</body>
+    <main class="container py-4">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <section>
+            <h2>Building a successful product is hard</h2>
+            <ul>
+              <li>Do you feel like you're always behind?</li>
+              <li>
+                Does your team spend more time fixing bugs than shipping new
+                features?
+              </li>
+              <li>Are you losing customers because your app is too slow?</li>
+              <li>
+                Have you ever made excuses for your product during a demo?
+              </li>
+              <li>
+                Is your app stuck on an old version of Laravel because you’re
+                too afraid to upgrade and break something?
+              </li>
+            </ul>
+          </section>
 
+          <section>
+            <h2>There is a better way</h2>
+            <ul>
+              <li>
+                Your projects are done on time and you even pay down technical
+                debt along the way.
+              </li>
+              <li>
+                Most of your time is spent building new things instead of fixing
+                old bugs.
+              </li>
+              <li>
+                People enjoy using your product and you take pride in your
+                well-performing app.
+              </li>
+              <li>
+                By staying current, your team gets to use the newest and best
+                Laravel features.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Accept <strong class="text-nowrap">No Compromises</strong></h2>
+            <p>
+              Your problems are painful, but not unique. Many teams face these
+              same challenges. Introducing a fresh perspective can help your
+              team break out of this rut. We've worked with many Laravel teams
+              to solve these exact pains. No Compromises isn't just another set
+              of hands. When we join a team, we do more than just close tickets
+              and write code. We make your team and product better.
+            </p>
+          </section>
+
+          <section>
+            <div class="card shadow-sm">
+              <div class="card-body text-center">
+                <h2>Close PHPStorm for a second</h2>
+                <p>
+                  Invest 30 minutes to see if we can help. Book a free
+                  consultation to discuss your team's needs.
+                </p>
+
+                <a
+                  href=""
+                  class="btn btn-primary"
+                  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nocomp/30min'});return false;"
+                >
+                  Schedule a call
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Common Questions</h2>
+            <dl>
+              <dt>
+                You say you make our product and team better. What does
+                <q>better</q> actually mean?
+              </dt>
+              <dd>
+                <p>
+                  We make your product better, not just by building features and
+                  fixing bugs, but by continually improving the code base:
+                  making code easier to understand, writing tests to build
+                  confidence, and creating useful documentation.
+                </p>
+                <p class="mb-0">
+                  We make your team better through open communication: investing
+                  time in constructive code review, pair programming, and
+                  helping translate technical needs to business outcomes.
+                </p>
+              </dd>
+
+              <dt>Why would I want some outsider like you?</dt>
+              <dd>
+                It's already tough to get everything done. Bringing in outside
+                help to introduce new best practices saves time, especially
+                since this is all we do. Plus, you can use our unbiased
+                expertise to make a stronger case with management that investing
+                in quality now will pay dividends.
+              </dd>
+
+              <dt>
+                We're already behind, won't adding more people slow things down?
+              </dt>
+              <dd>
+                Since we've worked on many projects, we're very quick to get up
+                to speed. Yes, we'll need your help with some initial setup, but
+                we aren't going to waste your time with a lot of silly
+                questions. We've also built tools over the years that make this
+                whole process easier.
+              </dd>
+
+              <dt>
+                I'm sold, but I don't make the final decision. Can you help
+                convince my boss?
+              </dt>
+              <dd>
+                We totally understand! You set up the call and we can do the
+                rest.
+              </dd>
+            </dl>
+          </section>
+
+          <section>
+            <h2>What's with the name No Compromises?</h2>
+            <p>
+              Developers really want to build something they're proud of, but
+              they often feel forced into making compromises. Joel also felt
+              that way for several years before deciding to take a stand. This
+              meant striking out on his own and starting No Compromises, with
+              the guiding principle of only doing projects the right way. This
+              doesn't mean he's stubborn, it just means he cares about building
+              quality software.
+            </p>
+
+            <p>
+              Aaron had many years of corporate experience leading teams with a
+              focus on best practices. While running the local PHP user group
+              together, they realized something. Joel's "no compromise" attitude
+              with Aaron's best practice mindset and attention to detail was a
+              perfect match.
+            </p>
+
+            <p>
+              We're proud to do the right thing. We want to bring that to your
+              team.
+            </p>
+          </section>
+
+          <section>
+            <h2>Let's do this!</h2>
+            <p>
+              It wasn't your fault things got this way, but now it's your
+              responsibility. We can make this better together. Don't put this
+              off another quarter.
+            </p>
+          </section>
+
+          <section>
+            <div class="card shadow-sm">
+              <div class="card-body text-center">
+                <h2>Not every problem can be solved by Stack Overflow</h2>
+                <p>
+                  Tap into our experience. Schedule a free 30-minute call and
+                  let us help.
+                </p>
+                <a
+                  href=""
+                  class="btn btn-primary"
+                  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nocomp/30min'});return false;"
+                >
+                  Schedule a call
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="py-5">
+      <div class="container">
+        <section class="row">
+          <div class="col-md mb-4 mb-md-0">
+            <h6>No Compromises</h6>
+            <p class="mb-0">
+              Joel Clermont / Aaron Saray
+            </p>
+            <p class="mb-0">
+              Milwaukee, Wisconsin
+            </p>
+            <p>
+              <a href="mailto:sales@nocompromises.io">sales@nocompromises.io</a>
+            </p>
+          </div>
+          <div class="col-md">
+            <h6>No Compromises Podcast</h6>
+            <p>
+              Curious what it's like to work with us? Check out one of our
+              <a href="https://show.nocompromises.io/episodes" rel="noopener"
+                >podcast episodes</a
+              >.
+            </p>
+            <iframe
+              height="200px"
+              width="100%"
+              frameborder="no"
+              scrolling="no"
+              seamless
+              src="https://player.simplecast.com/0b10acc3-acbb-4ab6-9727-5853e422368d?dark=false"
+            ></iframe>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
 </html>
