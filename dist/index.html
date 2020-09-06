@@ -10,13 +10,55 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
-
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
 
   <script src="https://assets.calendly.com/assets/external/widget.js" defer></script>
 
+  <script src="https://cdn.usefathom.com/script.js" site="TVVUCQRO" defer excluded-domains="localhost"></script>
+
   <style>
+    /* lato-regular - latin-ext_latin */
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('../fonts/lato-v16-latin-ext_latin-regular.eot');
+      /* IE9 Compat Modes */
+      src: local('Lato Regular'), local('Lato-Regular'),
+        url('../fonts/lato-v16-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/lato-v16-latin-ext_latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/lato-v16-latin-ext_latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/lato-v16-latin-ext_latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/lato-v16-latin-ext_latin-regular.svg#Lato') format('svg');
+      /* Legacy iOS */
+    }
+
+    /* lato-700 - latin-ext_latin */
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url('../fonts/lato-v16-latin-ext_latin-700.eot');
+      /* IE9 Compat Modes */
+      src: local('Lato Bold'), local('Lato-Bold'),
+        url('../fonts/lato-v16-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/lato-v16-latin-ext_latin-700.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/lato-v16-latin-ext_latin-700.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/lato-v16-latin-ext_latin-700.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/lato-v16-latin-ext_latin-700.svg#Lato') format('svg');
+      /* Legacy iOS */
+    }
+
     :root {
       --primary-color: #0277c0;
       --primary-color-bright: #3399cc;
@@ -30,6 +72,7 @@
       background-color: var(--light-color);
       color: #000000;
       font-family: "Lato", sans-serif;
+      font-size: 1.2rem;
     }
 
     .btn-primary {
