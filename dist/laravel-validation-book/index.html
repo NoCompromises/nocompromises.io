@@ -60,7 +60,7 @@
 
         <div class="sm:mx-auto sm:max-w-3xl sm:px-6">
           <div class="py-12 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-            <div class="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
+            <div class="relative sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full">
               <img
                 class="w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
                 src="book-cover-shot.png" alt="">
@@ -123,9 +123,17 @@
       </div>
 
       <!-- 3 -->
-      <div class="mt-32">
+      <div class="mt-16 lg:mt-32">
         <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
           <div class="lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
+            <div class="block lg:hidden">
+              <div class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none py-20">
+                <!-- Testimonial card-->
+                <div class="relative pt-64 pb-32 rounded-2xl shadow-xl overflow-hidden">
+                  <img class="absolute inset-0 h-full w-full object-cover" src="bad-data.png" alt="">
+                </div>
+              </div>
+            </div>
             <div>
               <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
                 Garbage in, garbage out
@@ -151,7 +159,7 @@
                 </p>
               </div>
             </div>
-            <div>
+            <div class="hidden lg:block">
               <div class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
                 <!-- Testimonial card-->
                 <div class="relative pt-64 pb-32 rounded-2xl shadow-xl overflow-hidden">
