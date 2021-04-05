@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.3"
+  },
+  "scripts": {
+    "build-css": "postcss src/laravel-validation-book/styles.css -o dist/laravel-validation-book/compiled.css",
+    "build-css-prod": "NODE_ENV=production postcss src/laravel-validation-book/styles.css -o dist/laravel-validation-book/compiled.css"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.0",
+    "@tailwindcss/forms": "^0.2.1"
+  }
+}
