@@ -4,6 +4,7 @@ module.exports = {
   purge: [
     './src/**/*.html',
     './src/**/*.js',
+    './dist/laravel-validation-book/index.html'
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
