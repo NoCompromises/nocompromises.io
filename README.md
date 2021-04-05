@@ -14,3 +14,4 @@ Make [No Compromises](https://nocompromises.io).
 * The main website is served from the `dist` directory so edit files directly in it.  It uses Boostrap.
 * The Laravel Validation Book is in the `dist/laravel-validation-book`.  It uses TailwindCSS.  The `compiled.css` is versioned and served.
   * To build any new TailwindCSS code, run `npm build-css` to get a development version of the CSS.
+* To test the local development, run `live-server dist` from the root of this project.
