@@ -3,6 +3,7 @@
 Github is responsible for hosting all our source code, and is also a useful project management tool. Individual users can create a free account with their name, and we also need to purchase an Organization for the team as a whole.
 
 ## Individual User Account
+
 Each user should have their own free account. This is useful for managing permissions, having conversations, assigning tasks and so on. If you don't already have a Github account, create one using the following steps.
 
 1. Go to [Github Signup](https://github.com/join?plan=free)
@@ -11,10 +12,11 @@ Each user should have their own free account. This is useful for managing permis
 4. Complete the process and verify your email address by clicking the link in the email they sent.
 
 ## Organization Account
+
 The company should also have a dedicated Organization account. This is a paid account, but it's important for proper team/permission management.
 
 1. Once logged in with your individual user account, [follow these steps to setup a new organization](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/creating-a-new-organization-from-scratch).
 2. Give the organization a meaningful name (ideally your company's name)
 3. Pick the basic Team plan ($25/month), not Enterprise.
 4. Enter payment information.
-5. Invite {Github Invite Email} to the Organization with the `Owner` role.
+5. Invite `{Github Invite Email}` to the Organization with the `Owner` role.
