@@ -87,19 +87,18 @@ Things change over the life of a project, and it can be very useful to capture t
 In addition to major version changes like this, there could be other historical details that would be useful to share. Did you switch billing providers? Did you change from a subscription model to a pay-per-use model? Is there some old functionality that is deprecated? One helpful thing to consider: if I were coming new into this project today, what sorts of things would be useful for me to know about the history of the project? Capture those in the documentation.
 
 **Technical documentation**
+This is probably the single most useful section of the documentation for someone new joining the project. There should be a step by step guide on how to get a local development environment set up. A lot of this could be captured automatically in a Docker config, or similar tooling, but even if you don't currently use those tools, there should be a reproducible way to get everything set up for local development.
 
-- how to get your local dev environment up and running
-- important scripts/commands to know
-- docker explanation
-- how to run tests
-- tips for debugging (telescope, xdebug, logs)
+Once the environment is running locally, you'll want to know common scripts and tasks for day-to-day development. Is there a particular coding standard enforced? Explain how to check it. What are the various test suites in use? Explain how to run them. Do you enforce rules via static analysis? Capture all of these handy tools in this section.
+
+If you have developer-focused tools setup, highlight what those are and how they can be used. For example, is Telescope enabled? Is there a particular logging strategy in place? Does one set of Docker config have xdebug enabled, but another doesn't? Those are the sorts of things that should be explained in the documentation.
 
 **Process documentation**
+Each team has their own process for how work is assigned, reviewed, and deployed to production. Use this section to document that process. Some questions that should be answered: Do you create new branches for each feature? Is there a particular naming convention for those feature branches? What branch should they be based off? When a developer is done with a feature, what is the process for code review?
 
-- branching strategy
-- explain CI
-- how to deploy (manual steps, or CD)
-- common things to troubleshoot
+This section is also a good spot to explain how any automated integration process is executed, and what sorts of things it checks. The CI configuration is likely already inside the repo, but a high-level explanation here can be useful. For very detailed CI notes, you can include more code comments in the CI configuration directly.
+
+Closely related to CI is deployment. When is a feature deemed ready to deploy? Who makes that decision? How do you get code deployed into the various environments (QA, staging, production)? Whether deployments are automated or not, make sure to document the exact steps needed.
 
 ### Action items
 
