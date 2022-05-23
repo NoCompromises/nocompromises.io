@@ -18,6 +18,4 @@ Make [No Compromises](https://nocompromises.io).
 
 The PDFs in the `dist/resources/` folder are generated from the documents in the `markdown` folder. If you make any changes to the source documents, you'll need to regenerate the PDFs.
 
-The only prerequisite is the the [md-to-pdf](https://github.com/simonhaenisch/md-to-pdf#readme) library. You can install it globally by running `npm i -g md-to-pdf`.
-
-Once that's installed, run `./generate-pdfs.sh` to export updated PDFs.
+After running `npm install`, you can generate PDFs with `npm run generate-pdfs`.
