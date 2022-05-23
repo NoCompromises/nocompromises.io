@@ -2,7 +2,7 @@
 
 The purpose of this document is to provide a framework for analyzing your project and infrastructure in order to capture all revelant documentation. Some sections may not apply in your case. Or, there may be something very unique about your environment that is not covered here. Use this as a guide and a starting point.
 
-Documentation is only useful if it can be easily found, and if it is kept up to date. High-level documentation should exist in one central spot, not tucked away inside one particular project or repository. One useful approach is to create a dedicated repo called `infrastructure` in GitHub, and use it for those high-level docs. If you chose to use the Wiki functionality in Github, include a prominent link in the repo's `README` explaining that is where the documentation can be found.
+Documentation is only useful if it can be easily found, and if it is kept up to date. High-level documentation should exist in one central spot, not tucked away inside one particular project or repository. One useful approach is to create a dedicated repo called `documentation` in GitHub, and use it for those high-level docs. If you chose to use the Wiki functionality in Github or a dedicated `docs` folder, include a prominent link in the repo's `README` explaining that is where the documentation can be found.
 
 > Even if you only have one project/repo currently, it's still a good idea to keep the high-level documentation in a separate, central place. That way, when you add a second repo, you don't have to shuffle things around.
 
@@ -10,7 +10,7 @@ Keeping documentation up to date requires process and discipline. Speak with the
 
 ### Action items
 
-- [ ] Decide on a location for high-level documentation. Create an `infrastructure` repo, if necessary.
+- [ ] Decide on a location for high-level documentation. Create an `documentation` repo, if necessary.
 - [ ] Communicate with the team and stakeholders about how to find and contribute to documentation.
 - [ ] If you have a code review process or checklist, add documentation review to that process.
 
@@ -20,9 +20,9 @@ This document will refer to many different services that require login credentia
 
 Instead, you should use this section of the document to explain where credentials can be found. Then, you can use other access control mechanisms to decide how to share credentials when necessary. For example, popular password managers have team functions or shared vaults, where you can invite specific individuals to have access to specific credentials.
 
-Credential sharing should be considered a last resort, or as a disaster recovery scenario. Most services have functionality to manage multiple users on a team. Instead of sharing one common account, leverage those user management features. It may require you to pay for a higher tier of service, but this is usually worth the added security and functionality.
+Credential sharing should be considered a last resort, or as a disaster recovery scenario. Most services have functionality to manage multiple users on a team. Instead of sharing one common account, leverage those user management features. It may require you to pay for a higher tier of service, but this is usually worth the added security and functionality. If you have to share an account, make sure the email address is an alias or distribution group instead of a single person's.
 
-Consider AWS as an example: No one should ever need to share AWS credentials for an account. See our [AWS Account Setup](https://nocompromises.io/resources/account-setup-aws.pdf) guide for instructions on how to invite other developers, even contractors outside your organization, to your AWS account. That particular setup guide assumes inviting a trusted developer who can manage everything, but you could alter the Role permissions to allow access to only specific services. That being said, there is one root AWS account which has certain access which cannot be fully delegated. It is critical to make sure this root AWS account is shared with more than one person in your organization. Losing access to that can be extremely difficult to recover from. This is the disaster recovery scenario mentioned above.
+Consider AWS as an example: No one should ever need to share AWS credentials for an account. See our [AWS Account Setup](https://nocompromises.io/resources/) guide for instructions on how to invite other developers, even contractors outside your organization, to your AWS account. That particular setup guide assumes inviting a trusted developer who can manage everything, but you could alter the Role permissions to allow access to only specific services. That being said, there is one root AWS account which has certain access which cannot be fully delegated. It is critical to make sure this root AWS account is shared with more than one person in your organization. Losing access to that can be extremely difficult to recover from. This is the disaster recovery scenario mentioned above.
 
 The other scenario where credential sharing may be necessary are for secrets like API keys or for services that don't have any sort of user management capability. In these cases, there is no other choice but to share a single credential, but this should represent a very small percentage of your credentials.
 
@@ -76,7 +76,7 @@ As with the infrastructure, this centralized documentation is meant to be just a
 
 Each of your projects requires its own specific documentation as well. There will be some minor overlap with the high-level organizational documentation, but that's okay. Each set of documentation serves its own purpose.
 
-The project's `README` is a great place to put this documentation. Depending on the size and scope of your documentation, you may also choose to put some of it in the Github wiki. Even if you choose to use the wiki, make sure your project has a `README` with the most common pieces of documentation, and then include links to the wiki for the rest.
+The project's `README` is a great place to put this documentation. Depending on the size and scope of your documentation, you may also choose to put some of it in a dedicated `docs` folder. Even if you choose to use the `docs` folder, make sure your project has a `README` with the most common pieces of documentation, and then include links to the `docs` folder for the rest.
 
 **Project purpose**
 In a few sentences, explain the basic purpose of this repo. For example, you could describe what domain the site is hosted at, who uses the site, and its importance to the business. This should definitely be at the top of the `README`.
@@ -102,8 +102,8 @@ Closely related to CI is deployment. When is a feature deemed ready to deploy? W
 
 ### Action items
 
-- [ ] Add a "Purpose" section to the README
-- [ ] Add a "History" section (either README or wiki)
+- [ ] Add a "Purpose" section
+- [ ] Add a "History" section
 - [ ] Write up exact steps to get your project running locally on a new computer
 - [ ] Document any important scripts for common development tasks
 - [ ] Document how to run the various test suites (phpunit, javascript, etc)

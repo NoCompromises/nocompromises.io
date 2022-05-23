@@ -16,7 +16,7 @@ Each user should have their own free account. This is useful for managing permis
 The company should also have a dedicated Organization account. This is a paid account, but it's important for proper team/permission management.
 
 1. Once logged in with your individual user account, [follow these steps to setup a new organization](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/creating-a-new-organization-from-scratch).
-2. Give the organization a meaningful name (ideally your company's name)
-3. Pick the basic Team plan ($25/month), not Enterprise.
-4. Enter payment information.
-5. Invite `{Github Invite Email}` to the Organization with the `Owner` role.
+1. Give the organization a meaningful name (ideally your company's name)
+1. Pick the Free plan.
+1. Invite `{Github Invite Email}` to the Organization.
+1. I'll contact you once I've accepted the invitation, then you can change my Role from Member to Owner.
