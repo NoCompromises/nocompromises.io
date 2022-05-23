@@ -20,15 +20,16 @@ This document will refer to many different services that require login credentia
 
 Instead, you should use this section of the document to explain where credentials can be found. Then, you can use other access control mechanisms to decide how to share credentials when necessary. For example, popular password managers have team functions or shared vaults, where you can invite specific individuals to have access to specific credentials.
 
-Credential sharing should be considered a last resort, or as a disaster recovery scenario. Most services have functionality to manage multiple users on a team. Instead of sharing one common account, leverage those user management features. It may require you to pay for a higher tier of service, but this is usually worth the added security and functionality. 
+Credential sharing should be considered a last resort, or as a disaster recovery scenario. Most services have functionality to manage multiple users on a team. Instead of sharing one common account, leverage those user management features. It may require you to pay for a higher tier of service, but this is usually worth the added security and functionality.
 
 Consider AWS as an example: No one should ever need to share AWS credentials for an account. See our [AWS Account Setup](https://nocompromises.io/resources/account-setup-aws.pdf) guide for instructions on how to invite other developers, even contractors outside your organization, to your AWS account. That particular setup guide assumes inviting a trusted developer who can manage everything, but you could alter the Role permissions to allow access to only specific services. That being said, there is one root AWS account which has certain access which cannot be fully delegated. It is critical to make sure this root AWS account is shared with more than one person in your organization. Losing access to that can be extremely difficult to recover from. This is the disaster recovery scenario mentioned above.
 
 The other scenario where credential sharing may be necessary are for secrets like API keys or for services that don't have any sort of user management capability. In these cases, there is no other choice but to share a single credential, but this should represent a very small percentage of your credentials.
 
-It may require some research and team communication to identify all these credentials. As you start documenting it, you may identify credentials managed by a team member or accounts owned by a third party (perhaps an outside contractor). 
+It may require some research and team communication to identify all these credentials. As you start documenting it, you may identify credentials managed by a team member or accounts owned by a third party (perhaps an outside contractor).
 
 ### Action items
+
 - [ ] Set up a mechanism for sharing credentials (for example, 1Password).
 - [ ] Capture all existing credentials into that central secure store.
 - [ ] Interview the team to identify "one-off" services that were set up without your knowledge.
@@ -50,6 +51,8 @@ Start by listing out every resource you currently use. You can use the credentia
 For each service, include a simple description of how it's used. For example, instead of just listing AWS, which has hundreds of services, you could list "AWS - servers, file storage, transactional email". It is also helpful to mention if a particular service requires use of a shared credential or secret.
 
 ### Action items
+
+- [ ] Document all domains owned, which registrar and DNS is used
 - [ ] Document all cloud providers in use (AWS, Digital Ocean, Google Cloud Platform, Azure, etc)
 - [ ] Document any managed hosting providers (WP Engine, Squarespace, etc)
 - [ ] Document any transactional or marketing email providers
@@ -65,9 +68,47 @@ If you have projects across multiple repos, and those interact with each other, 
 As with the infrastructure, this centralized documentation is meant to be just a high-level overview. The details of each individual microservice would be within that project's repository.
 
 ### Action items
+
 - [ ] Identify any interactions between your projects/repositories.
-- [ ] Document a high level flowchart to visualize these interactions. [Mermaid](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/) is a handy way to do this, and is supported in Github.
+- [ ] Document a high level flowchart to visualize these interactions. [Mermaid](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/) is a handy way to do this, and is supported natively in Github.
 
 ## Project documentation
 
-Each of your projects requires their own specific documentation as well. There will be some minor overlap with 
+Each of your projects requires its own specific documentation as well. There will be some minor overlap with the high-level organizational documentation, but that's okay. Each set of documentation serves its own purpose.
+
+The project's `README` is a great place to put this documentation. Depending on the size and scope of your documentation, you may also choose to put some of it in the Github wiki. Even if you choose to use the wiki, make sure your project has a `README` with the most common pieces of documentation, and then include links to the wiki for the rest.
+
+**Project purpose**
+In a few sentences, explain the basic purpose of this repo. For example, you could describe what domain the site is hosted at, who uses the site, and its importance to the business. This should definitely be at the top of the `README`.
+
+**Project history**
+Things change over the life of a project, and it can be very useful to capture that information in the documentation. For example, if your project has an API, and there is both a v1 and v2 API, describe why that's the case. Who uses v1 versus v2? Are there plans to sunset v1 at a certain date?
+
+In addition to major version changes like this, there could be other historical details that would be useful to share. Did you switch billing providers? Did you change from a subscription model to a pay-per-use model? Is there some old functionality that is deprecated? One helpful thing to consider: if I were coming new into this project today, what sorts of things would be useful for me to know about the history of the project? Capture those in the documentation.
+
+**Technical documentation**
+
+- how to get your local dev environment up and running
+- important scripts/commands to know
+- docker explanation
+- how to run tests
+- tips for debugging (telescope, xdebug, logs)
+
+**Process documentation**
+
+- branching strategy
+- explain CI
+- how to deploy (manual steps, or CD)
+- common things to troubleshoot
+
+### Action items
+
+- [ ] Add a "Purpose" section to the README
+- [ ] Add a "History" section (either README or wiki)
+- [ ] Write up exact steps to get your project running locally on a new computer
+- [ ] Document any important scripts for common development tasks
+- [ ] Document how to run the various test suites (phpunit, javascript, etc)
+- [ ] Document common troubleshooting or debugging scenarios
+- [ ] Describe the typical workflow for working on a feature or bugfix
+- [ ] Document your CI system
+- [ ] Documment how to deploy into each of your environments

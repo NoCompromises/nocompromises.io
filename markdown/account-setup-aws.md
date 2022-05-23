@@ -1,7 +1,8 @@
 # AWS
 
 ## Initial account setup
-Amazon has a [step-by-step guide for setting up an AWS account](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/).Carefully read and follow the instructions. 
+
+Amazon has a [step-by-step guide for setting up an AWS account](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/).Carefully read and follow the instructions.
 
 Most importantly, make sure to use a company email address, ideally a mailbox or distribution list that more than one person has access to. This will prevent a lot of problems down the road if you ever leave the company or lose access to your email account. It is also critical that you [enable multi-factor authentication](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user_manage_mfa) on the account.
 
@@ -10,6 +11,7 @@ When it asks for an account name, I recommend `{AWS Account Name}`.
 There is no need to purchase a support plan at this time. We may recommend adding one later.
 
 ## Grant developer access
+
 1. Log in to the [AWS Console](https://console.aws.amazon.com)
 1. In the upper right, click your name, then Account in the drop-down menu
 1. Scroll down to the "IAM User and Role Access to Billing Information" section.
