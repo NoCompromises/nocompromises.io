@@ -139,6 +139,30 @@
       margin-bottom: 1rem;
     }
 
+    blockquote {
+      font-style: italic;
+      padding: 0 3rem;
+    }
+
+    blockquote, .quote-attribution {
+      color: #333;
+    }
+
+    .avatar {
+      height: 4rem;
+      border-radius: 50%;
+    }
+
+    .quote-attribution {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .quote-attribution div:first-child {
+      margin-right: 0.5rem;
+    }
+
     footer {
       background: url("/footer-background.png") var(--dark-color);
       color: var(--light-color);
@@ -238,6 +262,18 @@
                 onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nocomp/30min'});return false;">
                 Schedule a call
               </a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <blockquote>I reached out to Aaron and Joel after listening to their podcast. They reviewed our architecture and pointed out some concerns. The best part is they also suggested a better way to handle our complex problem, rather than over-engineer it. This 60 minute call saved us thousands of dollars, and a lot of wasted time.</blockquote>
+          <div class="quote-attribution">
+            <div>
+              <img class="avatar" src="slav.jpeg" alt="Slav headshot">
+            </div>
+            <div>
+              Slav Stankov, Co-Founder of <a href="https://www.rush.app" target="_blank">Rush</a>
             </div>
           </div>
         </section>
