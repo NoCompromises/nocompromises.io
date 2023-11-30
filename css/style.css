@@ -1,21 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html {
-    background-color: #1e1e1e;
+@layer base {
+    html {
+        background-color: #1e1e1e;
+    }
+
+    footer {
+        border-image: radial-gradient(rgb(20, 62, 68, 1) 0%, rgb(114, 248, 208, 0.59) 20%, rgb(20, 62, 68, 1) 100%) 1;
+    }
+
+    footer .light-effect:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        border-radius: 50%;
+        box-shadow: 20px 20px 200px 100px #a5f3fc22;
+    }
 }
 
-footer {
-    border-image: radial-gradient(rgb(20, 62, 68, 1) 0%, rgb(114, 248, 208, 0.59) 20%, rgb(20, 62, 68, 1) 100%) 1;
-}
+@layer components {
+    .bullet {
+        position: relative;
+    }
 
-footer .light-effect:before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    border-radius: 50%;
-    box-shadow: 20px 20px 200px 100px #a5f3fc22;
+    .bullet:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 24px;
+        height: 3px;
+        @apply bg-blue-2;
+        box-shadow: 0px 4px 29px 5px theme('colors.blue.1');
+        overflow: hidden;
+    }
 }
