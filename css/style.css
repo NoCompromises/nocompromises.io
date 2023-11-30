@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    background-color: #1e1e1e;
+}
+
 footer {
     border-image: radial-gradient(rgb(20, 62, 68, 1) 0%, rgb(114, 248, 208, 0.59) 20%, rgb(20, 62, 68, 1) 100%) 1;
 }
