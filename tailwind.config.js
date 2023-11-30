@@ -8,7 +8,8 @@ export default {
       white: '#ffffff',
       blue: {
         1: '#0071BC',
-        2: '#a5f3fc',
+        2: '#29abe2',
+        3: '#a5f3fc',
       },
       'light-blue': '#B3C4D9',
       'dark-blue': {
