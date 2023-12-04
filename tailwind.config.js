@@ -23,6 +23,8 @@ export default {
       green: {
         1: '#5FDDB7',
         2: '#72F8CF',
+        3: '#4FCDA7',
+        4: '#21997C',
       },
     },
     fontFamily: {
@@ -103,7 +105,7 @@ export default {
         '14px',
         {
           lineHeight: '23px',
-          fontWeight: '700',
+          fontWeight: '300',
         },
       ],
       md: [
@@ -127,6 +129,10 @@ export default {
           fontWeight: '300',
         },
       ],
+    },
+    listStyleImage: {
+      starter: 'url("/images/bullet-starter.svg")',
+      diamond: 'url("/images/bullet-diamond.svg")',
     },
     extend: {},
     plugins: [],
