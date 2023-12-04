@@ -134,7 +134,11 @@ export default {
       starter: 'url("/images/bullet-starter.svg")',
       diamond: 'url("/images/bullet-diamond.svg")',
     },
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        bullet: 'repeat(auto-fit, minmax(0,max-content))',
+      },
+    },
     plugins: [],
   },
 };
