@@ -18,6 +18,10 @@
         background-color: #1e1e1e;
     }
 
+    body {
+        background: repeating-linear-gradient(90deg, theme('colors.dark-blue.1') 0px 250px, theme('colors.dark-blue.2') 250px 251px);
+    }
+
     footer {
         border-image: radial-gradient(rgb(20, 62, 68, 1) 0%, rgb(114, 248, 208, 0.59) 20%, rgb(20, 62, 68, 1) 100%) 1;
     }
@@ -30,6 +34,7 @@
     
     .bullet {
         position: relative;
+        clip-path: border-box;
     }
 
     .bullet:before {
