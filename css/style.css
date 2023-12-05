@@ -8,7 +8,7 @@
         width: 0.5rem;
     }
     *::-webkit-scrollbar-track {
-        @apply bg-dark-blue-1;
+        background-color: #1e1e1e;
     }
     *::-webkit-scrollbar-thumb {
         @apply bg-dark-blue-2 rounded-lg border border-solid border-blue-1;
@@ -50,5 +50,11 @@
 
     .quote-divider {
         border-image: linear-gradient(to bottom, theme('colors.blue.2 / 100%'), theme('colors.blue.2 / 0%')) 1;
+    }
+
+    @media only screen and (max-width: 350px) {
+        .quality-image {
+            @apply max-w-full !important;
+        }
     }
 }
