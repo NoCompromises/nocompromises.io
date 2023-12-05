@@ -25,6 +25,10 @@
     footer {
         border-image: radial-gradient(rgb(20, 62, 68, 1) 0%, rgb(114, 248, 208, 0.59) 20%, rgb(20, 62, 68, 1) 100%) 1;
     }
+
+    details summary::-webkit-details-marker {
+        display:none;
+    }
 }
 
 @layer components {
