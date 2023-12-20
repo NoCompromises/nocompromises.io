@@ -72,7 +72,7 @@
 }
 #featured-podcast::before {
     content: '';
-    background-image: url('images/waves.webp');
+    background-image: url('/images/waves.webp');
     background-position: top center;
     background-repeat: no-repeat;
     position: absolute;
